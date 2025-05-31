@@ -1,18 +1,25 @@
-cabal-version:   3.0
-name:            jq-exercises
-version:         0.1.0.0
-license:         NONE
-author:          Tikhon Jelvis <tikhon@jelv.is>
-maintainer:      Tikhon Jelvis <tikhon@jelv.is>
-build-type:      Simple
+cabal-version: 3.0
+name:          jq-exercises
+version:       0.1.0.0
+license:
+author:        Tikhon Jelvis <tikhon@jelv.is>
+maintainer:    Tikhon Jelvis <tikhon@jelv.is>
+build-type:    Simple
 
 common baseline
-    ghc-options: -Wall
-    build-depends: base, aeson
+  ghc-options:        -Wall -fno-show-error-context
+  default-language:   GHC2021
+  default-extensions: DerivingStrategies
+  build-depends:
+    , aeson
+    , base
+    , containers
+    , text
+    , vector
 
-executable example
-    import:           baseline
-    main-is:          Main.hs
-    build-depends:    base
-    hs-source-dirs:   src
-    default-language: Haskell2010
+library
+  import:          baseline
+  hs-source-dirs:  src
+  exposed-modules:
+    Jq
+    ReferenceJq
