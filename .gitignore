@@ -1,0 +1,10 @@
+# haskell
+dist
+dist-newstyle
+
+# direnv
+.direnv
+
+# emacs
+*~
+\#*\#
