@@ -52,7 +52,14 @@
               #
               # (ie ghcid = null;)
               tools = hp: {
-                inherit (hp) fourmolu cabal-fmt;
+                inherit (hp)
+                  cabal-fmt
+                  fourmolu
+                  ;
+
+                inherit (pkgs)
+                  nixfmt-rfc-style
+                  ;
               };
 
               # Check that haskell-language-server works
@@ -63,7 +70,7 @@
           # haskell-flake doesn't set the default package, but you can do it here.
           packages.default = self'.packages.example;
 
-          formatter = pkgs.nixfmt-rfc-style;
+          formatter = pkgs.nixfmt;
         };
     };
 }
