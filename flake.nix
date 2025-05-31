@@ -39,15 +39,12 @@
           };
 
           devShell = {
-            # Enabled by default
-            # enable = true;
-
             # Programs you want to make available in the shell.
             # Default programs can be disabled by setting to 'null'
             #
             # (ie ghcid = null;)
             tools = hp: {
-              fourmolu = hp.fourmolu;
+              inherit (hp) fourmolu cabal-fmt;
             };
 
             # Check that haskell-language-server works
