@@ -55,6 +55,7 @@
                 inherit (hp)
                   cabal-fmt
                   fourmolu
+                  hpack
                   ;
 
                 inherit (pkgs)

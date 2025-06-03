@@ -1,0 +1,18 @@
+spec-version: 0.36.0
+name: jq-exercises
+version: 0.1.0.0
+synopsis: some exercises implementing a jq-esque tool in Haskell
+author: Tikhon Jelvis <tikhon@jelv.is>
+maintainer: Tikhon Jelvis <tikhon@jelv.is>
+
+ghc-options: -Wall -fno-show-error-context
+
+dependencies:
+  - aeson
+  - base
+  - containers
+  - text
+  - vector
+
+library:
+  source-dirs: src
