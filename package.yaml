@@ -5,6 +5,7 @@ synopsis: some exercises implementing a jq-esque tool in Haskell
 author: Tikhon Jelvis <tikhon@jelv.is>
 maintainer: Tikhon Jelvis <tikhon@jelv.is>
 
+language: GHC2021
 ghc-options: -Wall -fno-show-error-context
 
 dependencies:
