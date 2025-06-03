@@ -16,6 +16,8 @@ library
       Jq
   hs-source-dirs:
       src
+  default-extensions:
+      DerivingStrategies
   ghc-options: -Wall -fno-show-error-context
   build-depends:
       aeson
