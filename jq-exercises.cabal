@@ -17,7 +17,20 @@ library
   hs-source-dirs:
       src
   default-extensions:
+      BlockArguments
+      DeriveAnyClass
       DerivingStrategies
+      DerivingVia
+      GADTs
+      LambdaCase
+      MultiWayIf
+      OverloadedLists
+      OverloadedRecordDot
+      OverloadedRecordUpdate
+      OverloadedStrings
+      PatternSynonyms
+      RecordWildCards
+      ViewPatterns
   ghc-options: -Wall -fno-show-error-context
   build-depends:
       aeson
